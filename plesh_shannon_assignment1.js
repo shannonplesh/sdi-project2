@@ -1,14 +1,12 @@
 // Author: Shannon Plesh
 // Assignment 2
-// I am having trouble capturing the output of my functions. For this reason I am submitting the assignment early whith hopes to fix my code in a resubmit.
 // The function of this program is to determine if the person meets the criteria needed to buy a hot property.
 // Set variables
 canBarrowMoney = true, money = 10000000, beachFrontMiami9 = "Hot property",beachFrontMiami8 = "Norman property",beachFrontMiami7 = "Norman property", person = "Serene", personP = "Serene\'s", propertiesToCheck = [beachFrontMiami9, beachFrontMiami8, beachFrontMiami7];
 // Procedure
 // The code below introduces us to the person and the intent of the story.
-console.log(person + " wants to buy a hot property in Miami Beach if she can afford it.");
+console.log(person + " wants to buy a hot property in Miami Beach.");
 howManyProperties();
-checkHot();
 console.log(person + " is looking at the first property on her list which is listed as a " + propertiesToCheck[0] + ".");
 
 
@@ -45,7 +43,7 @@ function checkHot() { if (beachFrontMiami9 === "Hot property") { console.log("Be
 
 // The array function below is used to count the properties that the person wants to visit and output the total number. Looking ahead, I'd like to turn the items in this array into objects that hold information pertaining to the property. 
 
-function howManyProperties() {console.log(person + " has " + propertiesToCheck.length + " properties that she is interested in looking at today.");
+function howManyProperties() {console.log(person + " has " + propertiesToCheck.length + " properties that she is interested in lookina at today.");
 	
 }
 
