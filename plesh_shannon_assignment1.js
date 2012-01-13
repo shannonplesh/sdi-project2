@@ -47,6 +47,8 @@ function howManyProperties() {console.log(person + " has " + propertiesToCheck.l
 	
 }
 
+// number function = property timmer with wile loop.
+// this function will check the ammout of time on the propertyTimer and reduce the number by 1 iteration every time the wile loop runs. 
 function checkDay() { while (propertyTimer > 0) {console.log("We still have " + propertyTimer + " minutes to buy this property. Lets see if we can buy this hot property befor the time expires.");
 	propertyTimer--}
 	
