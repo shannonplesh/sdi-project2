@@ -2,7 +2,7 @@
 // Assignment 2
 // The function of this program is to determine if the person meets the criteria needed to buy a hot property.
 // Set variables
-day = 14, canBarrowMoney = true, money = 10000000, beachFrontMiami9 = "Hot property",beachFrontMiami8 = "Norman property",beachFrontMiami7 = "Norman property", person = "Serene", personP = "Serene\'s", propertiesToCheck = [beachFrontMiami9, beachFrontMiami8, beachFrontMiami7];
+propertyTimer= 20, canBarrowMoney = true, money = 10000000, beachFrontMiami9 = "Hot property",beachFrontMiami8 = "Norman property",beachFrontMiami7 = "Norman property", person = "Serene", personP = "Serene\'s", propertiesToCheck = [beachFrontMiami9, beachFrontMiami8, beachFrontMiami7];
 // Procedure
 // The code below introduces us to the person and the intent of the story.
 console.log(person + " wants to buy a hot property in Miami Beach.");
@@ -47,9 +47,8 @@ function howManyProperties() {console.log(person + " has " + propertiesToCheck.l
 	
 }
 
-function checkDay() { while (day > 15) {console.log("We ar in the first half of the month. Lets see if we can buy a hot property.");
-	
-}
+function checkDay() { while (propertyTimer > 0) {console.log("We still have " + propertyTimer + " minutes to buy this property. Lets see if we can buy this hot property befor the time expires.");
+	propertyTimer--}
 	
 }
 checkDay();					     
