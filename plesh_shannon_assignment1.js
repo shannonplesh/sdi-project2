@@ -43,14 +43,14 @@ function checkHot() { if (beachFrontMiami9 === "Hot property") { console.log("Be
 
 // The array function below is used to count the properties that the person wants to visit and output the total number. Looking ahead, I'd like to turn the items in this array into objects that hold information pertaining to the property. 
 
-function howManyProperties() {console.log(person + " has " + propertiesToCheck.length + " properties that she is interested in lookina at today.");
+function howManyProperties() {console.log(person + " has " + propertiesToCheck.length + " properties that she is interested in looking at today.");
 	
 }
 
 // number function = property timmer with wile loop.
 // this function will check the ammout of time on the propertyTimer and reduce the number by 1 iteration every time the wile loop runs. 
-function checkDay() { while (propertyTimer > 0) {console.log("We still have " + propertyTimer + " minutes to buy this property. Lets see if we can buy this hot property befor the time expires.");
+function checkDay() { while (propertyTimer > 0) {console.log("Hot property for " + propertyTimer + " minutes.");
 	propertyTimer--}
 	
 }
-checkDay();					     
+checkDay();	
