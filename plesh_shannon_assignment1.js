@@ -2,7 +2,7 @@
 // Assignment 2
 // The function of this program is to determine if the person meets the criteria needed to buy a hot property.
 // Set variables
-propertyTimer= 20, canBarrowMoney = true, money = 10000000, beachFrontMiami9 = "Hot property",beachFrontMiami8 = "Norman property",beachFrontMiami7 = "Norman property", person = "Serene", personP = "Serene\'s", propertiesToCheck = [beachFrontMiami9, beachFrontMiami8, beachFrontMiami7];
+credit = 1000000000000000, propertyTimer= 20, canBarrowMoney = true, money = 10000000, beachFrontMiami9 = "Hot property",beachFrontMiami8 = "Normal property",beachFrontMiami7 = "Normal property", person = "Serene", personP = "Serene\'s", propertiesToCheck = [beachFrontMiami9, beachFrontMiami8, beachFrontMiami7];
 // Procedure
 // The code below introduces us to the person and the intent of the story.
 console.log(person + " wants to buy a hot property in Miami Beach.");
@@ -10,16 +10,7 @@ howManyProperties();
 console.log(person + " is looking at the first property on her list which is listed as a " + propertiesToCheck[0] + ".");
 
 
-// This boolean function checkForSale will check to see if the person is approved for the loan and output the correct responce.
-function checkForSale() {	if (canBarrowMoney === true) {console.log(person + " is approved for the loan!");
-return status === true;
-	}else {
-	console.log(person + " is not approved for the loan.");
-	}
-	return status === false;
-}
-// Below is where the boolean function checkForSale is called.
-checkForSale();
+
 
 // The number function below is used to check to see if there is enough money to buy this property.
 // This function will take the person string and concatenate it with a string of text that outputs the correct responce. In this example the property costs 1000000.	
@@ -49,8 +40,42 @@ function howManyProperties() {console.log(person + " has " + propertiesToCheck.l
 
 // number function = property timmer with wile loop.
 // this function will check the ammout of time on the propertyTimer and reduce the number by 1 iteration every time the wile loop runs. 
-function checkDay() { while (propertyTimer > 0) {console.log("Hot property for " + propertyTimer + " minutes.");
+function checkDay() { while (propertyTimer > 0) {console.log("Number of minutes this will be a hot property = " + propertyTimer);
 	propertyTimer--}
 	
 }
 checkDay();	
+
+// for loop
+// this loop will iterat the value of the property until it reaches  10 grand.
+function value() {
+var i=0;
+for (i=0;i<=10;i++) {console.log("the return value is $" + i + " grand.");
+if (i===10) {console.log("This is the highest value for this property. " + person + " must see if she can get a loan for it before it's sold.");
+	
+}
+}
+
+	
+}
+value();
+
+// This boolean function checkForSale will check to see if the person is approved for the loan and output the correct responce.
+function checkForSale() {	if (canBarrowMoney === true) {console.log(person + " is approved for the loan!");
+return status === true;
+	}else {
+	console.log(person + " is not approved for the loan.");
+	}
+	return status === false;
+}
+// Below is where the boolean function checkForSale is called.
+checkForSale();
+
+// credit credit function.
+function checkCredit() {
+if (credit > 10000000000) { console.log(personP + " got great credit!");
+
+}
+	
+}
+checkCredit();
